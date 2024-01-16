@@ -18,9 +18,9 @@ While I was learning Angular, I quickly realized how powerful the Angular CLI is
 So I thought about it and finally decided to create my own web application that would allow me to generate prompts for the Angular CLI quickly and easily. And what could be better suited for such a web application than Angular 😉.
 <br><br><br>
 
-### What can the **AngularCLI DevKit** do?
+### What can the **Angular CLI DevKit** do?
 
-Well ... a picture can say more than words. And that's why here is a screenshot of the main page of the **AngularCLI DevKit**
+Well ... a picture can say more than words. And that's why here is a screenshot of the main page of the **Angular CLI DevKit**
 <br><br>
 
 ![Angular CLI DevKit Screenshot](assets/scrnshot-20240116.png)
