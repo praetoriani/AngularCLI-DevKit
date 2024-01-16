@@ -2,9 +2,7 @@
 
 # EXCLUDE SOME FOLDERS
 /.backup
-/.backup/*
 /localhost
-/localhost/*
 
 # System files
 .DS_Store
