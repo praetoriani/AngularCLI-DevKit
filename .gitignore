@@ -1,6 +1,7 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # THIS WILL ENSURE THAT THE DEVELOPER FILES ARE NOT UPLOADED
+/development
 /development/*
 
 # System files
