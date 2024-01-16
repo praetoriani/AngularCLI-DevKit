@@ -2,9 +2,9 @@
 
 ![Angular CLI DevKit](assets/Angular-CLI-DevKit-Logo.png)
 
-![Static Badge](https://img.shields.io/badge/DevKit%20v1.00.82-%23000000?style=flat&logo=angular&logoColor=%23cc0000&label=Angular%20CLI&labelColor=%23efefef&color=%23525252)
-![Static Badge](https://img.shields.io/badge/Not%20Released-%23000000?style=flat&logo=visualstudiocode&logoColor=%231a8cff&label=Status%3A&labelColor=%23EFEFEF&color=%23525252)
-![Static Badge](https://img.shields.io/badge/January%2016%2C%202024-%23000000?style=flat&logoColor=%23cc0000&label=Last%20Update%3A%20&labelColor=%23efefef&color=%23525252)
+![Static Badge](https://img.shields.io/badge/DevKit%20v1.00.82-%23000000?style=flat&logo=angular&logoColor=%23cc0000&label=Angular%20CLI&labelColor=%23efefef&color=%23525252&link=https%3A%2F%2Fgithub.com%2Fpraetoriani%2FAngularCLI-DevKit)
+![Static Badge](https://img.shields.io/badge/Not%20Released-%23000000?style=flat&logo=visualstudiocode&logoColor=%231a8cff&label=Status%3A&labelColor=%23EFEFEF&color=%23525252&link=https%3A%2F%2Fgithub.com%2Fpraetoriani%2FAngularCLI-DevKit)
+![Static Badge](https://img.shields.io/badge/January%2016%2C%202024-%23000000?style=flat&logoColor=%23cc0000&label=Last%20Update%3A%20&labelColor=%23efefef&color=%23525252&link=https%3A%2F%2Fgithub.com%2Fpraetoriani%2FAngularCLI-DevKit)
 
 
 ### What is **Angular CLI DevKit**?
