@@ -1,0 +1,398 @@
+<app-ui-header></app-ui-header>
+
+<div id="BoxMainContent" name="BoxMainContent" class="BoxMainContent">
+    <!-- SPACER - THIS ONE IS IMPORTANT TO GET THE DISTANCE FROM THE TO (SO THE CONTENT WILL NOT BE HIDDEN BY THE HEADER) -->
+    <div class="BoxBlockContent">
+        <div class="PageTopSpacer">
+            <table style="width: 100%; border-collapse:collapse; justify-self: center; align-self: center;">
+                <tr>
+                    <td style="width: 100%; text-align: left; vertical-align: middle; justify-items: left;" class="BoxHeadExoFont">
+                        &nbsp;
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- WELCOME TEXT -->
+    <div class="BoxBlockContent">
+        <div class="WelcomeHeadBox FontWelcome">
+            <table style="width: 100%; border-collapse:collapse;">
+                <tr>
+                    <td style="width: 100%; text-align: center; vertical-align: middle;">
+                        Time to create a new Angular Workspace
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="BoxBlockContent">
+        <div class="WelcomeBodyBox FontHomeStandard">
+            <table style="width: 100%; border-collapse:collapse;">
+                <tr>
+                    <td style="width: 100%; text-align: center; vertical-align: middle;">
+                        This module will help you<br>to setup and configure your Workspace
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- ACTION FORM -->
+    <!--
+    https://v16.angular.io/cli/new
+    FOLLOWING OPTIONS ARE CURRENTLY NOT INTEGRATED
+    --collection        (unfortunately, don't know what this is or what it does)
+    --directory         is this really needed?
+    --help
+    -->
+    <div class="BoxBlockContent">
+        <div class="ActionForm FontFormStandard">
+            <table style="width: 100%; border-collapse: collapse;">
+                <tr>
+                    <td style="width: 60%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        Name of the Project:
+                    </td>
+                    <td style="width: 40%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        <input id="NewProjectName" [(ngModel)]="NewProjectName" type="text" class="FormInput FontFormInput" required placeholder="My-New-Project">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 60%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        Initial Git Repo Commit:
+                    </td>
+                    <td style="width: 40%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        <!-- Toggle-Schalter Container -->
+                        <div class="switch-container" (click)="toggleGitHub()">
+                        <input type="checkbox" class="switch-checkbox" [(ngModel)]="GitHubSwitch" id="GitHubSwitch">
+                        <label class="switch-slider round" for="toggle-switch"></label>
+                        <span class="switch-label">{{ GitHubSwitch ? 'On' : 'Off' }}</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 60%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        Initialize Git Repo:
+                    </td>
+                    <td style="width: 40%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        <!-- Toggle-Schalter Container -->
+                        <div class="switch-container" (click)="toggleGitRep()">
+                        <input type="checkbox" class="switch-checkbox" [(ngModel)]="GitRepSwitch" id="GitRepSwitch">
+                        <label class="switch-slider round" for="toggle-switch"></label>
+                        <span class="switch-label">{{ GitRepSwitch ? 'On' : 'Off' }}</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 60%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        Initial app inside Workspace:
+                    </td>
+                    <td style="width: 40%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        <!-- Toggle-Schalter Container -->
+                        <div class="switch-container" (click)="toggleNewApp()">
+                        <input type="checkbox" class="switch-checkbox" [(ngModel)]="NewAppSwitch" id="NewAppSwitch">
+                        <label class="switch-slider round" for="toggle-switch"></label>
+                        <span class="switch-label">{{ NewAppSwitch ? 'On' : 'Off' }}</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 60%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        Input prompts for default values:
+                    </td>
+                    <td style="width: 40%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        <!-- Toggle-Schalter Container -->
+                        <div class="switch-container" (click)="togglePrompt()">
+                        <input type="checkbox" class="switch-checkbox" [(ngModel)]="PromptSwitch" id="PromptSwitch">
+                        <label class="switch-slider round" for="toggle-switch"></label>
+                        <span class="switch-label">{{ PromptSwitch ? 'On' : 'Off' }}</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 60%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        Dry run:
+                    </td>
+                    <td style="width: 40%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        <!-- Toggle-Schalter Container -->
+                        <div class="switch-container" (click)="toggleDryRun()">
+                        <input type="checkbox" class="switch-checkbox" [(ngModel)]="DryRunSwitch" id="DryRunSwitch">
+                        <label class="switch-slider round" for="toggle-switch"></label>
+                        <span class="switch-label">{{ DryRunSwitch ? 'On' : 'Off' }}</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 60%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        Force (overwrite):
+                    </td>
+                    <td style="width: 40%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        <!-- Toggle-Schalter Container -->
+                        <div class="switch-container" (click)="toggleForced()">
+                        <input type="checkbox" class="switch-checkbox" [(ngModel)]="ForcedSwitch" id="ForcedSwitch">
+                        <label class="switch-slider round" for="toggle-switch"></label>
+                        <span class="switch-label">{{ ForcedSwitch ? 'On' : 'Off' }}</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 60%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        Use Inline Style:
+                    </td>
+                    <td style="width: 40%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        <!-- Toggle-Schalter Container -->
+                        <div class="switch-container" (click)="toggleInlineCSS()">
+                        <input type="checkbox" class="switch-checkbox" [(ngModel)]="UseInlineCSS" id="UseInlineCSS">
+                        <label class="switch-slider round" for="toggle-switch"></label>
+                        <span class="switch-label">{{ UseInlineCSS ? 'On' : 'Off' }}</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 60%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        Use Inline HTML:
+                    </td>
+                    <td style="width: 40%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        <!-- Toggle-Schalter Container -->
+                        <div class="switch-container" (click)="toggleInlineHTM()">
+                        <input type="checkbox" class="switch-checkbox" [(ngModel)]="UseInlineHTM" id="UseInlineHTM">
+                        <label class="switch-slider round" for="toggle-switch"></label>
+                        <span class="switch-label">{{ UseInlineHTM ? 'On' : 'Off' }}</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 60%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        Interactive Prompt:
+                    </td>
+                    <td style="width: 40%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        <!-- Toggle-Schalter Container -->
+                        <div class="switch-container" (click)="toggleIntActCMD()">
+                        <input type="checkbox" class="switch-checkbox" [(ngModel)]="intactPrompt" id="intactPrompt">
+                        <label class="switch-slider round" for="toggle-switch"></label>
+                        <span class="switch-label">{{ intactPrompt ? 'On' : 'Off' }}</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 60%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        Minimal Workspace:
+                    </td>
+                    <td style="width: 40%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        <!-- Toggle-Schalter Container -->
+                        <div class="switch-container" (click)="toggleMinimumWS()">
+                        <input type="checkbox" class="switch-checkbox" [(ngModel)]="UseMinimumWS" id="UseMinimumWS">
+                        <label class="switch-slider round" for="toggle-switch"></label>
+                        <span class="switch-label">{{ UseMinimumWS ? 'On' : 'Off' }}</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 60%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        New Project-Root:
+                    </td>
+                    <td style="width: 40%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        <input id="NewProjectRoot" [(ngModel)]="NewProjectRoot" type="text" class="FormInput FontFormInput" placeholder="leave empty to use default">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 60%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        Package Manager:
+                    </td>
+                    <td style="width: 40%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        <select id="PackageManager" [(ngModel)]="PackageManager" class="FormSelect FontFormInput">
+                            <option value="empty" selected>Please select</option>
+                            <option value="NPM">NPM</option>
+                            <option value="PNPM">PNPM</option>
+                            <option value="YARN">YARN</option>
+                            <option value="CNPM">CNPM</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 60%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        Prefix (for initial Project):
+                    </td>
+                    <td style="width: 40%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        <input id="NewProjectPref" [(ngModel)]="NewProjectPref" type="text" class="FormInput FontFormInput" placeholder="leave empty to use default">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 60%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        Generate Routing Module:
+                    </td>
+                    <td style="width: 40%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        <!-- Toggle-Schalter Container -->
+                        <div class="switch-container" (click)="toggleRouterMod()">
+                        <input type="checkbox" class="switch-checkbox" [(ngModel)]="UseRouterMod" id="UseRouterMod">
+                        <label class="switch-slider round" for="toggle-switch"></label>
+                        <span class="switch-label">{{ UseRouterMod ? 'On' : 'Off' }}</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 60%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        Do not install dependency packages:
+                    </td>
+                    <td style="width: 40%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        <!-- Toggle-Schalter Container -->
+                        <div class="switch-container" (click)="toggleDependCfg()">
+                        <input type="checkbox" class="switch-checkbox" [(ngModel)]="UseDependCfg" id="UseDependCfg">
+                        <label class="switch-slider round" for="toggle-switch"></label>
+                        <span class="switch-label">{{ UseDependCfg ? 'On' : 'Off' }}</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 60%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        Do not generate <i>spec.ts</i> files:
+                    </td>
+                    <td style="width: 40%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        <!-- Toggle-Schalter Container -->
+                        <div class="switch-container" (click)="toggleSpecTScfg()">
+                        <input type="checkbox" class="switch-checkbox" [(ngModel)]="UseSpecTScfg" id="UseSpecTScfg">
+                        <label class="switch-slider round" for="toggle-switch"></label>
+                        <span class="switch-label">{{ UseSpecTScfg ? 'On' : 'Off' }}</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 60%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        Standalone App (no NgModules):
+                    </td>
+                    <td style="width: 40%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        <!-- Toggle-Schalter Container -->
+                        <div class="switch-container" (click)="toggleSingleAPI()">
+                        <input type="checkbox" class="switch-checkbox" [(ngModel)]="SingleAPIapp" id="SingleAPIapp">
+                        <label class="switch-slider round" for="toggle-switch"></label>
+                        <span class="switch-label">{{ SingleAPIapp ? 'On' : 'Off' }}</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 60%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        Strict Mode:
+                    </td>
+                    <td style="width: 40%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        <!-- Toggle-Schalter Container -->
+                        <div class="switch-container" (click)="toggleStrictApp()">
+                        <input type="checkbox" class="switch-checkbox" [(ngModel)]="UseStrictApp" id="UseStrictApp">
+                        <label class="switch-slider round" for="toggle-switch"></label>
+                        <span class="switch-label">{{ UseStrictApp ? 'On' : 'Off' }}</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 60%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        Style:
+                    </td>
+                    <td style="width: 40%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        <select id="UseCSSstyleTyp" [(ngModel)]="UseCSSstyleTyp" class="FormSelect FontFormInput">
+                            <option value="empty" selected>Please select</option>
+                            <option value="CSS">CSS</option>
+                            <option value="SCSS">SCSS</option>
+                            <option value="SASS">SASS</option>
+                            <option value="LESS">LESS</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 60%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        Encapsulation Strategy:
+                    </td>
+                    <td style="width: 40%; text-align: left; vertical-align: middle; justify-content: left; padding: 10px 0px 10px 0px;">
+                        <select id="UsedEncapsMode" [(ngModel)]="UsedEncapsMode" class="FormSelect FontFormInput">
+                            <option selected value="default">Default</option>
+                            <option value="Emulated">Emulated</option>
+                            <option value="None">None</option>
+                            <option value="ShadowDom">ShadowDom</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- BOTTOM TEXT -->
+    <div class="BoxBlockContent">
+        <div class="BottomText FontFormStandard">
+            <table style="width: 100%; border-collapse:collapse;">
+                <tr>
+                    <td style="width: 100%; text-align: center; vertical-align: middle;">
+                        Just hit the <strong>Create Shell Prompt</strong> Button<br>to generate a prompt from the above config.
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!--  -->
+    <div class="BoxBlockContent">
+        <div class="ActionBox FontActionButton" (click)="createShellPrompt()">
+            <table style="width: 100%; height: 100%; border-collapse:collapse;">
+                <tr>
+                    <td style="width: 15%; height: 100%; text-align: center; vertical-align: middle; display: flexbox;">
+                        <ng-icon name="faSolidCode" size="26px"></ng-icon>
+                    </td>
+                    <td style="width: 85%; height: 100%; text-align: center; vertical-align: middle; display: flexbox;">
+                        Create Shell Prompt
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- SPACER -->
+    <div class="BoxBlockContent">
+        <div class="PageMidSpacer">
+            <table style="width: 100%; border-collapse:collapse; justify-self: center; align-self: center;">
+                <tr>
+                    <td style="width: 100%; text-align: left; vertical-align: middle; justify-items: left;" class="BoxHeadExoFont">
+                        &nbsp;
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- Command Shell -->
+    <div class="BoxBlockContent" *ngIf="ShowShellWin">
+        <div class="BoxShellWindow FontShellWin">
+            <table style="width: 100%; border-collapse: collapse; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;">
+                <tr>
+                    <td style="width: 5%; height: 30px; background-color: #202020; text-align: left; vertical-align: middle; padding: 4px 5px 4px 5px;">
+                        <ng-icon name="faSolidFileCode" size="24px" color="#EFEFEF"></ng-icon>
+                    </td>
+                    <td style="width: 95%; height: 30px; background-color: #202020; text-align: left; vertical-align: middle; padding: 4px 0px 4px 0px;" class="FontShellHead">
+                        Shell
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="width: 100%; height: 60px; background: none; text-align: left; vertical-align: middle; padding: 0px 0px 0px 10px;" class="FontShellBody"  [innerHTML]="AngularCLIcmd">
+                        <!-- THE CONTENT WILL BE SET VIA innerHTML -->
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="BoxBlockContent" *ngIf="ShowShellWin">
+        <div class="ActionCopy FontActionButton" (click)="copyToClipboard(AngularCLIcmd)">
+            <table style="width: 100%; height: 100%; border-collapse:collapse;">
+                <tr>
+                    <td style="width: 15%; height: 100%; text-align: center; vertical-align: middle; display: flexbox;">
+                        <ng-icon name="faSolidClipboardList" size="26px"></ng-icon>
+                    </td>
+                    <td style="width: 85%; height: 100%; text-align: center; vertical-align: middle; display: flexbox;">
+                        Copy to Clipboard
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- SPACER -->
+    <div class="BoxBlockContent">
+        <div class="PageEndSpacer">
+            <table style="width: 100%; border-collapse:collapse; justify-self: center; align-self: center;">
+                <tr>
+                    <td style="width: 100%; text-align: left; vertical-align: middle; justify-items: left;">
+                        &nbsp;
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

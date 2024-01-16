@@ -1,0 +1,134 @@
+.FontWelcome {
+font-family: 'Comfortaa', sans-serif;
+font-size: 22px;
+font-weight: bold;
+color: #333333;
+}
+.FontHomeStandard {
+font-family: 'Comfortaa', sans-serif;
+font-size: 22px;
+font-weight: normal;
+color: #333333;
+}
+.FontActionButton {
+font-family: 'Comfortaa', sans-serif;
+font-size: 14px;
+font-weight: bold;
+color: #EFEFEF;
+}
+.FontActionInfos {
+font-family: 'Comfortaa', sans-serif;
+font-size: 16px;
+font-weight: normal;
+color: #333333;
+}
+
+.BoxMainContent {
+display: grid;              // USE A GRID-LAYOUT FOR THE MAIN-DIV
+align-content: start;       // ALIGN THE CONTENT VERTICAL AT THE TOP
+justify-content: center;    // ALIGN THE CONTENT HORIZONTALLY IN THE CENTER
+position: absolute;         // WE NEED AN ABSOLUTE POSITION, TO MAKE USE OF TOP,LEFT,RIGHT,BOTTOM
+top: 0;
+left: 0;
+right: 0;
+bottom: 60px;               // MINUS 60px BECAUSE OF THE FOOTER ;)
+overflow-y: auto;           // SHOW SCROLLBARS ON THE Y-AXIS (IF NEEDED)
+overflow-x: hidden;         // NEVER EVER SCROLL THE CONTENT ON THE X-AXIS
+// FOLLOWING CODE MAKES THE DIV SCROLLABLE BUT HIDES THE SCROLLBARS :/
+//    overflow-y: scroll;
+//    scrollbar-width: none; /* Für Firefox */
+//    -ms-overflow-style: none; /* Für Internet Explorer und Edge */
+//    &::-webkit-scrollbar {
+//      display: none; /* Für Chrome, Safari und Opera */
+//    }
+margin: 0px 0px 0px 0px;    // TOP LEFT BOTTOM RIGHT
+padding: 0px 0px 0px 0px;
+background-color: none;
+border: none;
+background: none;
+z-index: 50;
+}
+
+.BoxBlockContent {
+border: none;
+background-color: none;
+display: flex;
+position: relative;
+align-content: center;
+justify-content: center;
+padding: 0px 0px 0px 0px;
+}
+
+.PageTopSpacer {
+width: 200px;
+height: 80px;
+border: none;
+border-radius: 0px;
+margin: 0px 0px 0px 0px;       // TOP / RIGHT / BOTTOM / LEFT
+padding: 0px 0px 0px 0px;
+//background-color: #444444;
+overflow: hidden;
+align-items: center;
+justify-items: center;
+}
+
+.WelcomeBox {
+width: 400px;
+//height: 300px;
+//border: 1px solid #000000;
+//border-radius: 25px;
+//margin: 50px 0px 0px 0px;       // TOP / RIGHT / BOTTOM / LEFT
+//background-color: #EFEFEF;
+//box-shadow: 6px 8px 15px rgba(51, 51, 51, 0.8);
+//overflow: hidden;
+align-items: center;
+justify-items: center;
+margin: 20px 0px 20px 0px;
+}
+
+.IntroTextBox {
+width: 600px;
+//background-color: #efefef;
+align-items: center;
+justify-items: center;
+margin: 20px 0px 20px 0px;
+}
+
+.ActionBox {
+width: 240px;
+height: 40px;
+background-color: #525252;
+border: 1px solid rgba(00, 00, 00, 0.75);
+border-radius: 8px;
+vertical-align: middle;
+margin: 12px 0px 12px 0px;
+padding: 0px 5px 0px 5px;
+// SET AN "ANIMATION" TRANSITION OF 0.5 SECONDS ('ease' is for smoother effect)
+transition: box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.ActionBox:hover {
+box-shadow: 6px 8px 15px rgba(51, 51, 51, 0.8);
+cursor: pointer;
+background-color: #636363;
+}
+
+.ActionInfoBox {
+width: 500px;
+height: 240px;
+border: none;
+border-radius: 10px;
+margin: 18px 0px 0px 0px;       // TOP / RIGHT / BOTTOM / LEFT
+padding: 5px 5px 5px 5px;
+//background-color: #444444;
+overflow: hidden;
+align-items: center;
+justify-items: center;
+}
+
+.TextBlock {
+text-align: justify;
+hyphens: auto;
+text-align-last: justify; // Hinzugefügt, um die letzte Zeile im Blocksatz auszurichten
+}
+
