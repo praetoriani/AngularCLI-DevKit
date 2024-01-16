@@ -4,6 +4,10 @@
 /development
 /development/*
 
+# THIS WILL ENSURE THAT THE ".backup"-FOLDER WILL NOT BE UPLOADED
+/.backup
+/.backup/*
+
 # System files
 .DS_Store
 Thumbs.db
