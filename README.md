@@ -9,8 +9,9 @@
 
 ### What is **Angular CLI DevKit**?
 
-In short: **AngularCLI DevKit** is an Angular-based web application, which offers the ability to create command prompts for the Angular CLI via a graphical user interface. With the **AngularCLI DevKit**, new workspaces, new components, new services, etc. can be created in this way. 
+In short: **Angular CLI DevKit** is an Angular-based web application, which offers the ability to create command prompts for the Angular CLI via a graphical user interface. With the **AngularCLI DevKit**, new workspaces, new components, new services, etc. can be created in this way. 
 <br><br>
+
 ### Okay ... tell me more
 
 While I was learning Angular, I quickly realized how powerful the Angular CLI is. However, I often had to read the official documentation because I simply couldn't memorize all the commands. So I started writing little Powershell scripts to help me create new projects, generate new components, create new services and everything else you can do with the Angular CLI. But this whole collection of scripts simply became extremely impractical at some point.
