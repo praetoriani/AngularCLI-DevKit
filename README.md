@@ -28,6 +28,14 @@ Well ... a picture can say more than words. And that's why here is a screenshot 
 
 <br><br>
 
+Actually, this little project was supposed to be just for myself and I didn't plan to release this app.  But in the end I liked it so much that I thought: "I'll just publish it on GitHub.".
+
+<br><br>
+
+And here we are.
+
+<br><br>
+
 > [!NOTE]
 > ... more stuff is coming soon ...
 
