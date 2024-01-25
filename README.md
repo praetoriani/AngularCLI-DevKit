@@ -1,6 +1,8 @@
 # Angular CLI DevKit
 
+
 ![Angular CLI DevKit](assets/Angular-CLI-DevKit-Logo.png)
+
 
 ![Static Badge](https://img.shields.io/badge/DevKit%20v1.00.82-%23000000?style=flat&logo=angular&logoColor=%23cc0000&label=Angular%20CLI&labelColor=%23efefef&color=%23525252&link=https%3A%2F%2Fgithub.com%2Fpraetoriani%2FAngularCLI-DevKit)
 ![Static Badge](https://img.shields.io/badge/Not%20Released-%23000000?style=flat&logo=visualstudiocode&logoColor=%231a8cff&label=Status%3A&labelColor=%23EFEFEF&color=%23525252&link=https%3A%2F%2Fgithub.com%2Fpraetoriani%2FAngularCLI-DevKit)
@@ -26,17 +28,15 @@ Well ... a picture can say more than words. And that's why here is a screenshot 
 
 ![Angular CLI DevKit Screenshot](assets/scrnshot-20240116.png)
 
-<br><br>
-
 Actually, this little project was supposed to be just for myself and I didn't plan to release this app.  But in the end I liked it so much that I thought: "I'll just publish it on GitHub.".
-
 <br><br>
 
-And here we are.
+### So what are the next steps?
 
-<br><br>
+The **Angular CLI DevKit** is almost finished so I am practically close to releasing a first version. But there are still a few little things to do. Not everything still works and a few functionalities are still missing. There are also a few minor bugs/issues that I still need to fix. I plan to have a first official version ready by the beginning of February. Just stop by any time. Happy to see you again 😊
 
+<!--
 > [!NOTE]
 > ... more stuff is coming soon ...
-
+-->
 
