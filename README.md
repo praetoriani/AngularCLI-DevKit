@@ -1,7 +1,7 @@
 # Angular CLI DevKit
 
 
-![Angular CLI DevKit](assets/Angular-CLI-DevKit-Logo.png)
+![Angular CLI DevKit](assets/Angular-CLI-Banner.png)
 
 
 ![Static Badge](https://img.shields.io/badge/DevKit%20v1.00.82-%23000000?style=flat&logo=angular&logoColor=%23cc0000&label=Angular%20CLI&labelColor=%23efefef&color=%23525252&link=https%3A%2F%2Fgithub.com%2Fpraetoriani%2FAngularCLI-DevKit)
