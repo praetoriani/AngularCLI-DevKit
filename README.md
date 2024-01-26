@@ -33,7 +33,7 @@ Actually, this little project was supposed to be just for myself and I didn't pl
 
 ### So what are the next steps?
 
-The **Angular CLI DevKit** is almost finished so I am practically close to releasing a first version. But there are still a few little things to do. Not everything still works and a few functionalities are still missing. There are also a few minor bugs/issues that I still need to fix. I plan to have a first official version ready by the beginning of February. Just stop by any time. Happy to see you again 😊
+The **Angular CLI DevKit** is almost finished so I am practically close to releasing a first version. But there are still a few little things to do. As it was not planned to release this app, the **Angular CLI DevKit** was very rustic and hat a simple and functional design and only the most necessary functions. I just didn't want to publish it in this state. And unfortunately it takes some time so that everything looks nice and in the end everything works as planned.<br><br>The user interface is currently completely finished. Almost all functionalities are implemented. Unfortunately, some of them are not yet working as planned. Here and there I probably have to adapt the interface a little and add one or two functions. So I'm on the home stretch and I'm confident that I'll soon have fixed the last bugs/issues. The plan is that I will hopefully have a first version ready at the beginning of February, which I can then publish. Just stop by any time. Happy to see you again 😊
 
 <!--
 > [!NOTE]
