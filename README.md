@@ -5,9 +5,20 @@
 
 
 ![Static Badge](https://img.shields.io/badge/DevKit%20v1.00.82-%23000000?style=flat&logo=angular&logoColor=%23cc0000&label=Angular%20CLI&labelColor=%23efefef&color=%23525252&link=https%3A%2F%2Fgithub.com%2Fpraetoriani%2FAngularCLI-DevKit)
-![Static Badge](https://img.shields.io/badge/Not%20Released-%23000000?style=flat&logo=visualstudiocode&logoColor=%231a8cff&label=Status%3A&labelColor=%23EFEFEF&color=%23525252&link=https%3A%2F%2Fgithub.com%2Fpraetoriani%2FAngularCLI-DevKit)
-![Static Badge](https://img.shields.io/badge/January%2016%2C%202024-%23000000?style=flat&logoColor=%23cc0000&label=Last%20Update%3A%20&labelColor=%23efefef&color=%23525252&link=https%3A%2F%2Fgithub.com%2Fpraetoriani%2FAngularCLI-DevKit)
+![Static Badge](https://img.shields.io/badge/Provisionally%20Released-%23000000?style=flat&logo=visualstudiocode&logoColor=%231a8cff&label=Status%3A&labelColor=%23EFEFEF&color=%23525252&link=https%3A%2F%2Fgithub.com%2Fpraetoriani%2FAngularCLI-DevKit)
+![Static Badge](https://img.shields.io/badge/February%2029%2C%202024-%23000000?style=flat&logoColor=%23cc0000&label=Last%20Update%3A%20&labelColor=%23efefef&color=%23525252&link=https%3A%2F%2Fgithub.com%2Fpraetoriani%2FAngularCLI-DevKit)
 
+### UPDATE (29.02.2024)
+
+Unfortunately, I don't have the time to finish this project at the moment. But since the app basically works (apart from a few small things), I wanted to at least publish the current status of the app.
+
+Here is the current status:<br>
+There is no info page. The help page is also missing. The *Create full Angular Project* module is functional, but still has a few bugs. The *Edit Project Details* page does not fully work. A step can be deleted, but if you make changes to a step, they cannot be saved yet. The finished Powershell script does not always work properly. Depending on how complex the project created is, the Powershell script may generate errors. In 8 out of 10 cases the Powershell script works.<br><br>Oh yes, maybe I should also mention at this point that this app is not optimized for all devices/screen resolutions. There are no issues in viewing the app on normal Desktop PCs or Laptops/Notebooks
+
+The current version of **Angular CLI DevKit** *(v1.00.82)* is available at the following URL:<br>
+[https://praetoriani.github.io/AngularCLI-DevKit/release/](https://praetoriani.github.io/AngularCLI-DevKit/release/)
+
+<br><br><br>
 
 ### What is **Angular CLI DevKit**?
 
